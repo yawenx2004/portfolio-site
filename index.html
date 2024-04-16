@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yawen's portfolio site</title>
+    <link rel="stylesheet" href="/fonts/Inter-Regular.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Bold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Light.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-ExtraLight.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Medium.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+  </head>
+
+  <body>
+    <div class="header">
+      <a class="home-button">
+        <div class="circle-icon"></div>
+      </a>
+      <div class="subtitles">
+        <a class="text-button" id="curr-page">home</a>
+        <a class="text-button" href="portfolio">portfolio</a>
+        <a class="text-button" href="resume">resume</a>
+        <a class="text-button" href="about">about</a>
+      </div>
+    </div>
+
+    <div class="big-text-container">
+      <div class="container-left">
+        <div class="big-textbox">
+          <div class="paragraph" id="greeting">Hello! I am</div>
+          <div class="title" id="name">&lt;yawen xue&gt;</div>
+          <div class="paragraph" id="tagline">UI/UX + graphic <span id="des">designer</span> // <span id="dev">coder</span> // <span id="tarot"></span></div>
+          <div class="paragraph">Sophomore at Dartmouth College, pursuing double majors in Cognitive Science and Computer Science. In my free time I rollerblade and read about the brain and crochet puppets. :)</div>
+          <a class="button-a" href="portfolio">
+            <button class="button" id="primary-button">portfolio</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="container-right">
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="grid-container">
+        <a class="grid-tile">
+          <div class="grid-container" id="tags">
+            <div class="grid-tile" id="tag">UI/UX</div>
+          </div>
+          <div class="img"></div>
+          <div class="textbox">
+            <div class="title" id="project-title">Capstone Project: <span class="unbold white-text">Intro to UI/UX Design</span></div>
+            <div class="paragraph" id="project-desc">Mobile to curate artistic inspiration, designed with Idil Sahin.</div>
+          </div>
+        </a>
+
+        <a class="grid-tile">
+          <div class="grid-container" id="tags">
+            <div class="grid-tile" id="tag">graphics</div>
+          </div>
+          <div class="img"></div>
+          <div class="textbox">
+            <div class="title" id="project-title">Graphics & Illustrations</div>
+            <div class="paragraph" id="project-desc">Various things I've made over the years!</div>
+          </div>
+        </a>
+
+        <a class="grid-tile">
+          <div class="grid-container" id="tags">
+            <div class="grid-tile" id="tag">web dev</div>
+          </div>
+          <div class="img"></div>
+          <div class="textbox">
+            <div class="title" id="project-title">Personal Website</div>
+            <div class="paragraph" id="project-desc">This thing right here :)</div>
+          </div>
+        </a>
+
+        <a class="grid-tile">
+          <div class="grid-container" id="tags">
+            <div class="grid-tile" id="tag">testtag</div>
+            <div class="grid-tile" id="tag">placeholder</div>
+          </div>
+          <div class="img"></div>
+          <div class="textbox">
+            <div class="title" id="project-title">Coming soon!</div>
+            <div class="paragraph" id="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu blandit felis. Quisque consequat augue eget ipsum commodo tristique.</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const roles = ['"cognitive scientist"', 'artist', 'tarot reader', 'likes algorithms', 'beats up friends', 'you KNOW you want me in dali'];
+      const tarotElement = document.getElementById('tarot');
+
+      let index = 0;
+      function changeRole() {
+          tarotElement.textContent = roles[index++];
+          if (index >= roles.length) {
+              index = 0;
+          }
+      }
+      setInterval(changeRole, 2000);
+    </script>
+  </body>
+</html>
