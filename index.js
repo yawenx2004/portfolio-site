@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const fs = require('fs');
 
 const port = 1334;
 
@@ -9,20 +10,30 @@ app.use(express.static('fonts'));
 app.use(express.static('documents'));
 app.use(express.static('images'))
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+const getHeaderHtml = () => {
+  return fs.readFileSync(path.join(__dirname, 'header.html'), 'utf8');
+};
 
-app.get('/portfolio', (req, res) => {
-  res.sendFile(path.join(__dirname, 'portfolio.html'));
+const getFooterHtml = () => {
+  return fs.readFileSync(path.join(__dirname, 'footer.html'), 'utf8')
+};
+
+const headerHtml = getHeaderHtml();
+const footerHtml = getFooterHtml();
+
+app.get('/', (req, res) => {
+  const indexHtml = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  res.send(headerHtml + indexHtml + footerHtml);
 });
 
 app.get('/resume', (req, res) => {
-  res.sendFile(path.join(__dirname, 'resume.html'));
+  const resumeHtml = fs.readFileSync(path.join(__dirname, 'resume.html'), 'utf8');
+  res.send(headerHtml + resumeHtml + footerHtml);
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about.html'));
+  const aboutHtml = fs.readFileSync(path.join(__dirname, 'about.html'), 'utf8');
+  res.send(headerHtml + aboutHtml + footerHtml);
 });
 
 app.listen(port, () => {

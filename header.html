@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>resume</title>
+    <link rel="stylesheet" href="/fonts/Inter-Regular.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Bold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Light.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-ExtraLight.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="/fonts/Inter-Medium.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+  </head>
+
+  <body>
+    <div class="header">
+        <a class="home-button" href="/">
+            <div class="circle-icon"></div>
+        </a>
+        <div class="subtitles">
+          <a class="text-button" href="/" id="nav-home">home & portfolio</a>
+            <a class="text-button" href="resume" id="nav-resume">resume</a>
+            <a class="text-button" href="about" id="nav-about">about</a>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    // make it so that whatever page you are on, the link goes inactive
+    const pagePath = window.location.pathname;
+
+    // function to remove href and change color
+    function makeLinkInactive(page) {
+      document.getElementById('nav-' + page).removeAttribute('href')
+      document.getElementById('nav-' + page).style.color = '#B9B669';
+    }
+
+    // apply above function
+    if (pagePath.includes('resume')) {
+      makeLinkInactive('resume');
+    } else if (pagePath.includes('about')) {
+      makeLinkInactive('about');
+    } else {
+      makeLinkInactive('home')
+    }
+  </script>
+</html>

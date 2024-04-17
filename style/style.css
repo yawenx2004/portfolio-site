@@ -59,6 +59,12 @@
 body {
     background-color: var(--white);
     color: var(--black);
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header {
@@ -92,6 +98,17 @@ body {
     display: flex;
     flex-direction: column;
     padding: 48px;
+}
+
+/* //////////////////// */
+/* footer               */
+/* //////////////////// */
+.footer {
+    background-color: var(--black);
+}
+
+.footer .paragraph {
+    color: var(--white);
 }
 
 /* //////////////////// */
@@ -142,6 +159,7 @@ body {
 
 .grid-tile:hover {
     color: var(--black);
+    text-decoration: none;
     border: 2px solid var(--black);
     background-color: var(--postit);
     box-shadow: inset 8px 8px 0px 0px var(--black), 8px 8px 0px 0px var(--postit);
