@@ -5,6 +5,21 @@ const fs = require('fs');
 
 const port = 1334;
 
+// webpack for build
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+const webpackConfig = require('./webpack.config.js');
+
+const compiler = webpack(webpackConfig);
+
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: webpackConfig.output.publicPath
+}));
+
+app.use(webpackHotMiddleware(compiler));
+
+// rest of my code
 app.use(express.static('style'));
 app.use(express.static('fonts'));
 app.use(express.static('documents'));
