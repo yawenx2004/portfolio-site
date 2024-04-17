@@ -18,7 +18,7 @@ function authenticate(req, res) {
 
     // go home if you cancel
     if (!credentials || credentials.pass !== password) {
-        const homeContent = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+        const homeContent = fs.readFileSync(path.join(__dirname, 'main.html'), 'utf8');
         res.writeHead(401, { 'WWW-Authenticate': 'Basic realm="example"' });
         res.end(`${header}${homeContent}${footer}`);
         return;
@@ -54,7 +54,7 @@ const server = http.createServer((req, res) => {
 
     // various html pages
     if (url.pathname === '/') {
-        filePath = path.join(__dirname, 'index.html');
+        filePath = path.join(__dirname, 'main.html');
     } else if (url.pathname === '/resume') {
         filePath = path.join(__dirname, 'resume.html');
     } else if (url.pathname === '/about') {
