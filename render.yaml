@@ -1,0 +1,7 @@
+routes:
+  - path: /*
+    type: static
+    dir: public
+  - path: /
+    type: static
+    src: index.js
