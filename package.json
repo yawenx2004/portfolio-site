@@ -3,10 +3,9 @@
     "version": "1.0.1",
     "description": "my portfolio site <3 (v.2, NOT using express this time)",
     "main": "index.js",
-    "type": "module",
     "scripts": {
         "dev": "nodemon index.js",
-        "build": "rollup -c"
+        "build": "rollup -c --bundleConfigAsCjs"
     },
     "keywords": [],
     "author": "yawen_xue",
