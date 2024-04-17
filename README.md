@@ -8,9 +8,6 @@ This is my portfolio site! Still a work in progress, but I had fun developing it
 npm install
 npm run dev
 ```
-(NOT UP YET I'LL PUT THIS UP AND LINK IT WHEN I'M DONE) If you're here for my DALI dev application, click on the fourth tile of my portfolio to view my interpretation of the thematic website challenge.
-
-Unfortunately GitHub is incompatible with Express. You can find a sad, skeletal, HTML-only version of the site with various images and documents missing, linked [here](https://yawenx2004.github.io/portfolio-site/).
 
 # Demo
 tbd

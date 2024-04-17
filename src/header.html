@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>yawen's site <3</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+  </head>
+
+  <body>
+    <div class="header" id="header">
+        <a class="home-button" href="/">
+            <div class="circle-icon"></div>
+        </a>
+        <div class="subtitles" id="subtitles">
+          <a class="text-button" href="/" id="nav-home">home & portfolio</a>
+          <a class="text-button" href="resume" id="nav-resume">resume</a>
+          <a class="text-button" href="about" id="nav-about">about</a>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    // make it so that whatever page you are on, the link goes inactive
+    const pagePath = window.location.pathname;
+
+    // function to remove href and change color
+    function makeLinkInactive(page) {
+      document.getElementById('nav-' + page).removeAttribute('href')
+      document.getElementById('nav-' + page).style.color = '#B7D465';
+    }
+
+    // apply above function
+    if (pagePath === '/resume') {
+      makeLinkInactive('resume');
+    } else if (pagePath === '/about') {
+      makeLinkInactive('about');
+    } else if (pagePath === '/'){
+      makeLinkInactive('home');
+    }
+  </script>
+</html>
