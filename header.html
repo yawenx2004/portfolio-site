@@ -27,7 +27,7 @@
     // function to remove href and change color
     function makeLinkInactive(page) {
       document.getElementById('nav-' + page).removeAttribute('href')
-      document.getElementById('nav-' + page).style.color = '#B9B669';
+      document.getElementById('nav-' + page).style.color = '#B7D465';
     }
 
     // apply above function
@@ -37,7 +37,9 @@
     } else if (pagePath.includes('about')) {
       makeLinkInactive('about');
     } else {
-      if (!pagePath.includes('internal') && !pagePath.includes('authenticate')){
+      if (!pagePath.includes('internal') && 
+      !pagePath.includes('authenticate') && 
+      !pagePath.includes('art-gallery')){
         makeLinkInactive('home');
       }
     }

@@ -40,13 +40,16 @@
     --white: #FFFCF4;
     --black: #282824;
     --action: #F36A63;
-    --accent: #B9B669;
+    --accent: #B7D465;
     --dim: #748FA2;
 
     --yellow: #FFC214;
 
     --blue-sky: #6EAFBE;
-    --postit: #FFFCF4;
+    --postit: #FFFEFB;
+
+    /* trying with actual white */
+    --white: #FFFEFB;
 }
 
 * {
@@ -111,12 +114,14 @@ a {
     display: flex;
     flex-direction: column;
     padding: 48px;
+    padding-bottom: 96px;
 }
 
 .buttons-box {
     display: flex;
     flex-direction: row;
     padding: 48px 0px;
+    padding-bottom: 0px;
 }
 
 /* //////////////////// */
@@ -303,6 +308,7 @@ a {
 
     padding: 12px 24px;
     background-color: var(--action);
+    background-image: linear-gradient(to bottom, var(--action), #FF3C6B);
 
     border: none;
     border-radius: 16px;
@@ -364,6 +370,7 @@ embed {
     color: var(--black);
     border: 2px solid var(--black);
     background-color: var(--yellow);
+    background-image: linear-gradient(to bottom, var(--yellow), #FF912C);
     box-shadow: inset 8px 8px 0px 0px var(--white), 8px 8px 0px 0px var(--yellow);
     cursor: pointer;
 }
@@ -378,14 +385,27 @@ embed {
 
 #about-container {
     flex-direction: row;
+    align-items: center;
 }
 
 #about-container .about-left {
-    flex: 1;
+    width: 240px;
+    margin-right: 48px;
 }
 
-#about-container .about-right {
+/*#about-container .about-right {
     flex: 1;
+}*/
+
+#yawen-image {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    border-radius: 120px;
+
+    background-image: url('yawenx.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* //////////////////// */
