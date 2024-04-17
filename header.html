@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>resume</title>
-    <link rel="stylesheet" href="/fonts/Inter-Regular.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="/fonts/Inter-Bold.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="/fonts/Inter-Light.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="/fonts/Inter-ExtraLight.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="/fonts/Inter-Medium.woff2" type="font/woff2" as="font" crossorigin>
+    <meta charset="UTF-8">
+    <title>yawen's site <3</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="shortcut icon" type="image/png" href="logo.png">
   </head>
 
   <body>
-    <div class="header">
+    <div class="header" id="header">
         <a class="home-button" href="/">
             <div class="circle-icon"></div>
         </a>
-        <div class="subtitles">
+        <div class="subtitles" id="subtitles">
           <a class="text-button" href="/" id="nav-home">home & portfolio</a>
-            <a class="text-button" href="resume" id="nav-resume">resume</a>
-            <a class="text-button" href="about" id="nav-about">about</a>
+          <a class="text-button" href="resume" id="nav-resume">resume</a>
+          <a class="text-button" href="about" id="nav-about">about</a>
         </div>
     </div>
   </body>
@@ -37,10 +33,13 @@
     // apply above function
     if (pagePath.includes('resume')) {
       makeLinkInactive('resume');
+      console.log(pagePath);
     } else if (pagePath.includes('about')) {
       makeLinkInactive('about');
     } else {
-      makeLinkInactive('home')
+      if (!pagePath.includes('internal') && !pagePath.includes('authenticate')){
+        makeLinkInactive('home');
+      }
     }
   </script>
 </html>
