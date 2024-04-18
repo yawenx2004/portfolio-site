@@ -49,7 +49,8 @@
     --postit: #FFFEFB;
 
     /* trying with actual white */
-    --white: #FFFEFB;
+    --white: white;
+    --postit: white;
 }
 
 * {
