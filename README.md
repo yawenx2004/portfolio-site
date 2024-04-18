@@ -3,7 +3,7 @@
 
 This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 17 April 2024 it features my portfolio (under construction), my resume (also under construction), and a hidden internal page (under construction and I don't know what to do with it).
 
-When this site becomes more functional I intend to obtain a domain and make it my UI/UX design and web deve portolio.
+When this site becomes more functional I intend to obtain a domain and make it my UI/UX design and web dev portolio. :)
 
 - **index.js** is the entry point of my application
 - **src** houses my HTML documents
