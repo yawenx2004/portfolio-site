@@ -19,5 +19,20 @@
           <div class="paragraph">I think you should hire me as a developer because I learn really fast and I love implementing things and it is 3:48 a.m. and I really should be asleep but I'm making this thing because it's so fun. :(</div>
         </div>
     </div>
+
+    <script>
+      // incomplete; i want to do something when the strawberry is level with my profile picture
+      function logScrollPosition() {
+        var scrollPosition = window.scrollY;
+        console.log("Scroll position:", scrollPosition);
+        if (scrollPosition > 120) {
+          document.getElementById('yawen-image').style.backgroundImage="url(../images/djmkraemer.png)";
+        } else {
+          document.getElementById('yawen-image').style.backgroundImage="";
+        }
+      }
+
+      window.addEventListener("scroll", logScrollPosition);
+    </script>
   </body>
 </html>

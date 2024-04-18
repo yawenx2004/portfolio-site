@@ -44,8 +44,6 @@
     --dim: #748FA2;
 
     --yellow: #FFC214;
-
-    --blue-sky: #6EAFBE;
     --postit: #FFFEFB;
 
     /* trying with actual white */
@@ -151,6 +149,13 @@ a {
     margin: 4px 0px;
 }
 
+#copyright-container {
+    padding-bottom: 24px;
+}
+
+#copyright {
+    text-align: right;
+}
 /* //////////////////// */
 /* title page           */
 /* //////////////////// */
@@ -175,7 +180,6 @@ a {
 /* grids                */
 /* //////////////////// */
 .section {
-    background-color: var(--blue-sky);
     background-image: url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,7 +395,7 @@ embed {
 
 #about-container .about-left {
     width: 240px;
-    margin-right: 48px;
+    margin-right: 72px;
 }
 
 /*#about-container .about-right {
@@ -407,6 +411,8 @@ embed {
     background-image: url('../images/yawenx.jpeg');
     background-size: cover;
     background-position: center;
+
+    transition: background-image 2s ease;
 }
 
 /* //////////////////// */

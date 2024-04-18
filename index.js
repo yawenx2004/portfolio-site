@@ -63,6 +63,8 @@ const server = http.createServer((req, res) => {
         filePath = path.join(__dirname, 'src', 'art-gallery.html');
     } else if (url.pathname === '/journal') {
         filePath = path.join(__dirname, 'src', 'journal.html');
+    } else if (url.pathname === '/sandbox') {
+        filePath = path.join(__dirname, 'src', 'sandbox.html');
 
     // password-protected:
     } else if (url.pathname == '/internal') {
