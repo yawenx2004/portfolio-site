@@ -431,6 +431,10 @@ embed {
         height: 576px;
     }
 
+    .subtitles a {
+        margin-right: 0px;
+    }
+
     .grid-container {
         grid-template-columns: repeat(2, 240px);
     }
@@ -438,6 +442,10 @@ embed {
 
 /* for very small screens */
 @media (min-width: 676px) and (max-width: 766px) {
+    .circle-icon {
+        display: none;
+    }
+
     .subtitles a {
         margin-right: 0px;
     }

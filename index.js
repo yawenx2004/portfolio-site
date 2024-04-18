@@ -4,7 +4,7 @@ const path = require('path');
 const auth = require('basic-auth');
 
 const port = 1334;
-const password = '30dec';
+const password = '30 dec';
 
 // errors, header, & footer
 const errorFilePath = path.join(__dirname, 'src', 'error.html');
@@ -61,6 +61,8 @@ const server = http.createServer((req, res) => {
         filePath = path.join(__dirname, 'src', 'about.html');
     } else if (url.pathname === '/art-gallery') {
         filePath = path.join(__dirname, 'src', 'art-gallery.html');
+    } else if (url.pathname === '/journal') {
+        filePath = path.join(__dirname, 'src', 'journal.html');
 
     // password-protected:
     } else if (url.pathname == '/internal') {

@@ -16,6 +16,7 @@
           <a class="text-button" href="/" id="nav-home">home & portfolio</a>
           <a class="text-button" href="resume" id="nav-resume">resume</a>
           <a class="text-button" href="about" id="nav-about">about</a>
+          <a class="text-button" href="journal" id="nav-journal">journal</a>
         </div>
     </div>
   </body>
@@ -31,12 +32,14 @@
     }
 
     // apply above function
-    if (pagePath === '/resume') {
-      makeLinkInactive('resume');
+    if (pagePath === '/') {
+      makeLinkInactive('home');
     } else if (pagePath === '/about') {
       makeLinkInactive('about');
-    } else if (pagePath === '/'){
-      makeLinkInactive('home');
+    } else if (pagePath === '/resume'){
+      makeLinkInactive('resume');
+    } else if (pagePath === '/journal'){
+      makeLinkInactive('journal');
     }
   </script>
 </html>
