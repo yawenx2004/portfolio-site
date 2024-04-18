@@ -7,7 +7,7 @@ When this site becomes more functional I intend to obtain a domain and make it m
 - **src** houses my HTML documents (or... i intend for it to once i update)
 - **style** houses my CSS file
 
-# Running instructions, locally
+# Instructions for running on your local machine
 1. Clone repository from GitHub
 2. Type the following commands into the terminal:
 ```bash
@@ -21,3 +21,8 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 This demo is notably missing the password-protection feature for internal.html.
 
 I'll write more here later.
+
+# Future features?
+- DALI developer challenge — I'll have it in my portfolio section
+- need to figure out what goes on the password-protected page
+- scroll detection — I'd like to try some cool things with it
