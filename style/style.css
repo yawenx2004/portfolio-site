@@ -3,35 +3,35 @@
 /* //////////////////// */
 @font-face {
     font-family: 'Inter';
-    src: url('../Inter-Regular.woff2') format('woff2');
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
   
 @font-face {
     font-family: 'Inter';
-    src: url('../Inter-Bold.woff2') format('woff2');
+    src: url('../fonts/Inter-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../Inter-Light.woff2') format('woff2');
+    src: url('../fonts/Inter-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../Inter-ExtraLight.woff2') format('woff2');
+    src: url('../fonts/Inter-ExtraLight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../Inter-Medium.woff2') format('woff2');
+    src: url('../fonts/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
@@ -92,7 +92,7 @@ a {
     top: 0px;
     width: 160px;
     height: 160px;
-    background-image: url('logo.png');
+    background-image: url('../images/logo.png');
     background-size: cover;
     background-position: center;
 }
@@ -176,7 +176,7 @@ a {
 /* //////////////////// */
 .section {
     background-color: var(--blue-sky);
-    background-image: url("bg.png");
+    background-image: url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 48px 0px;
@@ -404,7 +404,7 @@ embed {
     margin: auto;
     border-radius: 120px;
 
-    background-image: url('yawenx.jpeg');
+    background-image: url('../images/yawenx.jpeg');
     background-size: cover;
     background-position: center;
 }

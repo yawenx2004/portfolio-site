@@ -7,10 +7,10 @@ const port = 1334;
 const password = '30dec';
 
 // errors, header, & footer
-const errorFilePath = path.join(__dirname, 'error.html');
+const errorFilePath = path.join(__dirname, 'src', 'error.html');
 const errorContent = fs.readFileSync(errorFilePath, 'utf8');
-const header = fs.readFileSync(path.join(__dirname, 'header.html'), 'utf8');
-const footer = fs.readFileSync(path.join(__dirname, 'footer.html'), 'utf8');
+const header = fs.readFileSync(path.join(__dirname, 'src', 'header.html'), 'utf8');
+const footer = fs.readFileSync(path.join(__dirname, 'src', 'footer.html'), 'utf8');
 
 // check authentification
 function authenticate(req, res) {
@@ -18,14 +18,14 @@ function authenticate(req, res) {
 
     // go home if you cancel
     if (!credentials || credentials.pass !== password) {
-        const homeContent = fs.readFileSync(path.join(__dirname, 'main.html'), 'utf8');
+        const homeContent = fs.readFileSync(path.join(__dirname, 'src', 'main.html'), 'utf8');
         res.writeHead(401, { 'WWW-Authenticate': 'Basic realm="example"' });
         res.end(`${header}${homeContent}${footer}`);
         return;
 
     // otherwise, congratulations, you can see the page! <3
     } else {
-        serveHtml(req, res, path.join(__dirname, 'internal.html'));
+        serveHtml(req, res, path.join(__dirname, 'src', 'internal.html'));
     }
 }
 
@@ -54,13 +54,13 @@ const server = http.createServer((req, res) => {
 
     // various html pages
     if (url.pathname === '/') {
-        filePath = path.join(__dirname, 'main.html');
+        filePath = path.join(__dirname, 'src', 'main.html');
     } else if (url.pathname === '/resume') {
-        filePath = path.join(__dirname, 'resume.html');
+        filePath = path.join(__dirname, 'src', 'resume.html');
     } else if (url.pathname === '/about') {
-        filePath = path.join(__dirname, 'about.html');
+        filePath = path.join(__dirname, 'src', 'about.html');
     } else if (url.pathname === '/art-gallery') {
-        filePath = path.join(__dirname, 'art-gallery.html');
+        filePath = path.join(__dirname, 'src', 'art-gallery.html');
 
     // password-protected:
     } else if (url.pathname == '/internal') {
