@@ -1,3 +1,5 @@
+[demo (more on it later)](https://yawenx2004.github.io/portfolio-site-static/index.html)
+
 # About my project
 This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 17 April 2024 it features my portfolio (under construction), my resume (also under construction), and a hidden internal page (under construction and I don't know what it's for but I like it).
 
