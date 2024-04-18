@@ -4,7 +4,7 @@ This is my portfolio site! Still a work in progress, but I had/am having fun dev
 When this site becomes more functional I intend to obtain a domain and make it my UI/UX design and web deve portolio.
 
 - **index.js** is the entry point of my application
-- **src** houses my HTML documents (or... i intend for it to once i update)
+- **src** houses my HTML documents
 - **style** houses my CSS file
 
 # Instructions for running on your local machine
