@@ -1,5 +1,5 @@
 # About my project
-[demo (more on it later)](https://yawenx2004.github.io/portfolio-site-static/index.html)
+[demo](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
 This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 17 April 2024 it features my portfolio (under construction), my resume (also under construction), and a hidden internal page (under construction and I don't know what to do with it).
 
@@ -22,9 +22,10 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 
 This demo is notably missing the password-protection feature for internal.html.
 
-I'll write more here later.
-
 # Future features?
+- flesh out resume & portfolio
+- _especially_ make a page for my UI/UX project
+- make buttons less wobbly! right now they push other elements around when I hover
 - DALI developer challenge — I'll have it in my portfolio section
 - need to figure out what goes on the password-protected page
 - scroll detection — I'd like to try some cool things with it
