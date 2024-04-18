@@ -21,17 +21,17 @@
     </div>
 
     <script>
-      // incomplete; i want to do something when the strawberry is level with my profile picture
+      // changes picture when we're at a certain scroll position
       function logScrollPosition() {
         var scrollPosition = window.scrollY;
-        console.log("Scroll position:", scrollPosition);
+
+        // console.log("Scroll position:", scrollPosition);
         if (scrollPosition > 120) {
-          document.getElementById('yawen-image').style.backgroundImage="url(../images/djmkraemer.png)";
+          document.getElementById('yawen-image').style.backgroundImage="url(../images/not-yawen-image.png)";
         } else {
           document.getElementById('yawen-image').style.backgroundImage="";
         }
       }
-
       window.addEventListener("scroll", logScrollPosition);
     </script>
   </body>

@@ -42,6 +42,7 @@
     --action: #F36A63;
     --accent: #B7D465;
     --dim: #748FA2;
+    --dim-hover: #94C7EC;
 
     --yellow: #FFC214;
     --postit: #FFFEFB;
@@ -149,6 +150,18 @@ a {
     margin: 4px 0px;
 }
 
+.footer .paragraph-dim:hover {
+    color: var(--dim-hover);
+}
+
+.footer .grid-container {
+    padding: 48px 0px;
+}
+
+.footer .container {
+    padding-bottom: 48px;
+}
+
 #copyright-container {
     padding-bottom: 24px;
 }
@@ -184,6 +197,8 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 48px 0px;
+
+    scroll-behavior: smooth;    /* doesn't seem browser-compatible... ahh well */
 }
 
 .grid-container {

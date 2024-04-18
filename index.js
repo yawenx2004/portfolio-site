@@ -59,10 +59,12 @@ const server = http.createServer((req, res) => {
         filePath = path.join(__dirname, 'src', 'resume.html');
     } else if (url.pathname === '/about') {
         filePath = path.join(__dirname, 'src', 'about.html');
-    } else if (url.pathname === '/art-gallery') {
-        filePath = path.join(__dirname, 'src', 'art-gallery.html');
     } else if (url.pathname === '/journal') {
         filePath = path.join(__dirname, 'src', 'journal.html');
+    } else if (url.pathname === '/cosc25') {
+        filePath = path.join(__dirname, 'src', 'cosc25.html');
+    } else if (url.pathname === '/art-gallery') {
+        filePath = path.join(__dirname, 'src', 'art-gallery.html');
     } else if (url.pathname === '/sandbox') {
         filePath = path.join(__dirname, 'src', 'sandbox.html');
 
