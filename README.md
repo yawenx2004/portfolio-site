@@ -18,7 +18,7 @@ npm run dev
 ```
 
 # Demo
-You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website (since neither GitHub nor Render has allowed me to serve dynamic index.js files... I'll figure it out someday). It has limited functionality and as of 17 April 2024 I have stopped updating it concurrently with this repository.
+You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website (since neither GitHub nor Render has allowed me to serve dynamic index.js files... I'll figure it out someday). It has limited functionality and as of 18 April 2024 I have stopped updating it concurrently with this repository.
 
 This demo is notably missing the password-protection feature for internal.html.
 
