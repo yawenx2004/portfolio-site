@@ -24,7 +24,7 @@ This demo is notably missing the password-protection feature for internal.html.
 
 # Future features?
 - flesh out resume & portfolio
-- _especially_ make a page for my UI/UX project
+- I'd love to have a database in the backend with various projects; the site could just pull information from there
 - make buttons less wobbly! right now they push other elements around when I hover
 - DALI developer challenge — I'll have it in my portfolio section
 - need to figure out what goes on the password-protected page
