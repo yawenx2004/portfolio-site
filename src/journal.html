@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>about me</title>
+    <title>journal</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="shortcut icon" type="image/png" href="./images/logo.png">
   </head>
@@ -10,7 +10,26 @@
   <body>
     <div class="container first-container">
       <div class="title">journal</div>
-      <div class="paragraph">blog, perhaps?</div>
+      <div class="paragraph">This is a work in progress! I intend to learn SQL and create a database to save these entries. Meanwhile we are displaying one entry at a time, saved in local storage; scroll down to see the most recent entry.</div>
     </div>
+    <div class="container" id="blogEntries"></div>
   </body>
+
+  <script>
+      const blogEntry = JSON.parse(localStorage.getItem('blogEntry'));
+
+      if (blogEntry) {
+          const blogEntriesDiv = document.getElementById('blogEntries');
+
+          const date = new Date(blogEntry.date);
+          const entryHTML = `
+              <div>
+                  <div class="title">${blogEntry.title}</div>
+                  <div class="paragraph">${blogEntry.date} // ${blogEntry.location}</div>
+                  <div class="paragraph">${blogEntry.text}</div>
+              </div>
+          `;
+          blogEntriesDiv.innerHTML = entryHTML;
+      }
+  </script>
 </html>

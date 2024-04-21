@@ -5,17 +5,72 @@
     <title>internal</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <style>
+      /* blog text input */
+      #text {
+        width: 100%;
+        height: 120px;
+        max-width: 100%;
+        resize: vertical;
+      }
+
+      label {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container first-container">
         <div class="title">internal</div>
-        <div class="paragraph">this button below does not work but i like it :)</div>
+        <div class="paragraph">Hello! :)</div>
+    </div>
+
+    <div class="container" id="blog-editor">
+      <div class="title">blog editor</div>
+      <form id="blogForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+        
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br>
+
+        <label for="text">Text:</label><br>
+        <textarea id="text" name="text" required></textarea><br>
+    
         <div class="buttons-box">
-          <a class="button-a">
-            <button class="button" id="primary-button"><3</button>
-          </a>
+          <button type="submit" class="button" id="primary-button">Submit</button>
         </div>
+      </form>
     </div>
   </body>
+
+
+
+<script>
+    document.getElementById('blogForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // check for all fields filled
+        if (!this.checkValidity()) {
+            this.reportValidity();
+            return;
+        }
+
+        const formData = new FormData(this);
+        const entry = {
+            title: formData.get('title'),
+            date: formData.get('date'),
+            location: formData.get('location'),
+            text: formData.get('text')
+        };
+
+        localStorage.setItem('blogEntry', JSON.stringify(entry));
+        window.location.href = 'journal';
+    });
+</script>
 </html>
