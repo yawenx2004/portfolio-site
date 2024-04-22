@@ -12,6 +12,7 @@ When this site becomes more functional I intend to obtain a domain and make it m
 # Instructions for running on your local machine
 1. Clone repository from GitHub
 2. Type the following commands into the terminal:
+3. To test blog functionality, go to internal.html (scroll down; it's the bottom link on the footer), and type in the password; you will then be able to access the blog editor form.
 ```bash
 npm install
 npm run dev
@@ -24,8 +25,5 @@ This demo is notably missing the password-protection feature for internal.html.
 
 # Future features?
 - flesh out resume & portfolio
-- I'd love to have a database in the backend with various projects; the site could just pull information from there
+- host blog & portfolio entries in SQL database; currently everything is in local storage
 - make buttons less wobbly! right now they push other elements around when I hover
-- DALI developer challenge — I'll have it in my portfolio section
-- need to figure out what goes on the password-protected page
-- scroll detection — I'd like to try some cool things with it
