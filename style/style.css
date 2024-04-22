@@ -204,7 +204,7 @@ a {
 /* grids                */
 /* //////////////////// */
 .section {
-    background-image: url("../images/bg.png");
+    background-image: url('../images/bg.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 48px 0px;

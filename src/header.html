@@ -12,6 +12,7 @@
         <a class="home-button" href="/">
             <div class="circle-icon"></div>
         </a>
+        
         <div class="subtitles" id="subtitles">
           <a class="text-button" href="/" id="nav-home">home & portfolio</a>
           <a class="text-button" href="resume" id="nav-resume">resume</a>
@@ -19,27 +20,27 @@
           <a class="text-button" href="journal" id="nav-journal">journal</a>
         </div>
     </div>
+
+    <script>
+      // make it so that whatever page you are on, the link goes inactive
+      const pagePath = window.location.pathname;
+  
+      // function to remove href and change color
+      function makeLinkInactive(page) {
+        document.getElementById('nav-' + page).removeAttribute('href')
+        document.getElementById('nav-' + page).style.color = '#B7D465';
+      }
+  
+      // apply above function
+      if (pagePath === '/') {
+        makeLinkInactive('home');
+      } else if (pagePath === '/about') {
+        makeLinkInactive('about');
+      } else if (pagePath === '/resume'){
+        makeLinkInactive('resume');
+      } else if (pagePath === '/journal'){
+        makeLinkInactive('journal');
+      }
+    </script>
   </body>
-
-  <script>
-    // make it so that whatever page you are on, the link goes inactive
-    const pagePath = window.location.pathname;
-
-    // function to remove href and change color
-    function makeLinkInactive(page) {
-      document.getElementById('nav-' + page).removeAttribute('href')
-      document.getElementById('nav-' + page).style.color = '#B7D465';
-    }
-
-    // apply above function
-    if (pagePath === '/') {
-      makeLinkInactive('home');
-    } else if (pagePath === '/about') {
-      makeLinkInactive('about');
-    } else if (pagePath === '/resume'){
-      makeLinkInactive('resume');
-    } else if (pagePath === '/journal'){
-      makeLinkInactive('journal');
-    }
-  </script>
 </html>

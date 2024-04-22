@@ -49,29 +49,29 @@
     </div>
 
     <div class="spacer"></div>
-    
-  </body>
 
-<script>
-    document.getElementById('blogForm').addEventListener('submit', function(event) {
+    <script>
+      document.getElementById('blogForm').addEventListener('submit', function(event) {
         event.preventDefault();
-
+    
         // check for all fields filled
         if (!this.checkValidity()) {
-            this.reportValidity();
-            return;
+          this.reportValidity();
+          return;
         }
-
+    
+        // put in local storage
         const formData = new FormData(this);
         const entry = {
-            title: formData.get('title'),
-            date: formData.get('date'),
-            location: formData.get('location'),
-            text: formData.get('text')
+          title: formData.get('title'),
+          date: formData.get('date'),
+          location: formData.get('location'),
+          text: formData.get('text')
         };
-
+    
         localStorage.setItem('blogEntry', JSON.stringify(entry));
         window.location.href = 'journal';
-    });
-</script>
+      });
+    </script>
+  </body>
 </html>
