@@ -38,7 +38,8 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 This demo is notably missing the password-protection feature for internal.html, so here is what happens—
 
 1. Click the link to the interal page (scroll down to the footer); you should see the password input prompt pictured below:
-2. If you click cancel, you'll be directed to the home page; if you enter the wrong password, the form will refresh; if you enter the correct password, you'll be able to access internal.html.
+2. If you click cancel, you'll be directed to the home page; if you enter the wrong password, the form will refresh; if you enter the correct password, you'll be able to access /internal.
+3. See changes reflected in /journal!
 
 ![Demo Image](./demo/demo-password-form.png)
 
