@@ -15,7 +15,7 @@ This is absolutely still a work in progress (and I'm spending way too much time 
 - **portfolio** (🚧 under construction): built on a responsive grid layout; showcases my projects
 - **resume** (🚧 under construction): here you can view and/or download a copy of my resume (last update sometime in April 2024)
 - **about page**: contains an intro & weather data (retrieved from [OpenWeather](https://openweathermap.org/)) of places I am from
-- **"blog"**: my "thoughts;" currently running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
+- **"blog"** (🚧 under construction): my "thoughts;" currently running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
 
 Directory structure:
 
