@@ -25,7 +25,8 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 
 This demo is notably missing the password-protection feature for internal.html.
 
-![Demo Image](./demo/demo-password-form.png)
+![Demo Image](./demo/demo-password-form.png){ width = 50% }
+
 
 
 # Future features?
