@@ -1,8 +1,9 @@
 # Contents
 
 - [About](#about-my-project)
-- [Section 2](#section-2)
-- [Section 3](#section-3)
+- [Running on your local machine](#instructions-for-running-on-your-local-machine)
+- [Demo](#demo)
+- [Future features](#future-features)
 
 # About my project
 [demo](https://yawenx2004.github.io/portfolio-site-static/index.html)
