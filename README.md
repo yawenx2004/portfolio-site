@@ -23,11 +23,12 @@ npm run dev
 # Demo
 You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website (since neither GitHub nor Render has allowed me to serve dynamic index.js files... I'll figure it out someday). It has limited functionality and as of 22 April 2024 I have stopped updating it concurrently with this repository.
 
-This demo is notably missing the password-protection feature for internal.html.
+This demo is notably missing the password-protection feature for internal.html, so here is what happens—
 
-![Demo Image](./demo/demo-password-form.png){ width = 50% }
+1. Click the link to the interal page (scroll down to the footer); you should see the password input prompt pictured below:
+2. If you click cancel, you'll be directed to the home page; if you enter the wrong password, the form will refresh; if you enter the correct password, you'll be able to access internal.html.
 
-
+![Demo Image](./demo/demo-password-form.png)
 
 # Future features?
 - flesh out resume & portfolio
