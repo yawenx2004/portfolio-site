@@ -27,6 +27,17 @@ This demo is notably missing the password-protection feature for internal.html, 
 
 It's missing so many things. :(
 
+<video width="320" height="240" controls>
+  <source src="demo/demo-responsive.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="demo/demo-blog.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 # Future features?
 - flesh out resume & portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage

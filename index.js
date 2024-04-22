@@ -4,7 +4,7 @@ const path = require('path');
 const auth = require('basic-auth');
 
 const port = 1334;
-const password = '30 dec';
+const password = '30dec';
 
 // errors, header, & footer
 const errorFilePath = path.join(__dirname, 'src', 'error.html');
