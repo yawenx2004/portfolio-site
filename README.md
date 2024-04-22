@@ -25,7 +25,7 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 
 This demo is notably missing the password-protection feature for internal.html.
 
-[![Demo Video](https://vimeo.com/937861246?share=copy)](https://vimeo.com/937861246?share=copy)
+![Demo Image](./demo/demo-password-form.png)
 
 
 # Future features?
