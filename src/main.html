@@ -90,12 +90,10 @@
       </div>
     </div>
 
-    <div id="weather"></div>
-
-    <script>
+    <script>  
       const roles = ['"cognitive scientist"', 'artist', 'tarot reader', 'likes algorithms', 'beats up friends', 'you KNOW you want me in dali'];
       const tarotElement = document.getElementById('tarot');
-
+    
       let index = 0;
       function changeRole() {
           tarotElement.textContent = roles[index++];
@@ -104,36 +102,6 @@
           }
       }
       setInterval(changeRole, 2000);
-
-      // weather
-      // fetch weather
-      async function fetchLocalWeather() {
-        const apiKey = '36b343d898c2753e10cd15e0b4de0d7a';
-        const lat = '43.700859';
-        const lon = '-72.289398';
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
-        const data = await response.json();
-        return data;
-      }
-
-      // display weather
-      async function displayWeather() {
-        const weatherData = await fetchLocalWeather();
-
-        const weatherContainer = document.getElementById('weather');
-        const temperature = weatherData.main.temp;
-        const description = weatherData.weather[0].description;
-        const icon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
-
-        const weatherElement = document.createElement('div');
-        weatherElement.innerHTML = `
-                <img src="${icon}" alt="${description}" />
-                <p>Temperature: ${temperature}°C</p>
-                <p>Description: ${description}</p>`;
-        weatherContainer.appendChild(weatherElement);
-      }
-
-      window.onload = displayWeather;
     </script>
   </body>
 </html>
