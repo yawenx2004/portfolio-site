@@ -1,6 +1,6 @@
 # Contents
 
-- [About my project 🌱](#about-my-project)
+- [About my project 🌱](#about-my-project-🌱)
 - [Running on your local machine](#instructions-for-running-on-your-local-machine)
 - [Demo](#demo)
 - [Future features](#future-features)
