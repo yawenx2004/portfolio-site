@@ -1,9 +1,9 @@
 # Contents
 
-- [About my project 🌱](#about-my-project-🌱)
-- [Running on your local machine](#instructions-for-running-on-your-local-machine)
-- [Demo](#demo)
-- [Future features](#future-features)
+- [About my project 🌱](#about-my-project-)
+- [How to run on your local machine 💻](#instructions-for-running-on-your-local-machine-)
+- [Demo 🚀](#demo-)
+- [Future features!! 🌠](#future-features-)
 
 # About my project 🌱
 [HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
@@ -23,7 +23,7 @@ Directory structure:
 - **src** houses my HTML documents
 - **style** houses my CSS file
 
-# Instructions for running on your local machine
+# How to run on your local machine 💻
 1. Clone repository from GitHub
 2. Type the following commands into the terminal:
 3. To test blog functionality, go to internal.html (scroll down; it's the bottom link on the footer), and type in the password; you will then be able to access the blog editor form.
@@ -32,7 +32,7 @@ npm install
 npm run dev
 ```
 
-# Demo
+# Demo 🚀
 You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website. Please note that this preview has limited functionality and does not include all the features present in this version.
 
 This demo is notably missing the password-protection feature for internal.html, so here is what happens—
@@ -42,7 +42,7 @@ This demo is notably missing the password-protection feature for internal.html, 
 
 ![Demo Image](./demo/demo-password-form.png)
 
-# Future features?
+# Future features!! 🌠
 - flesh out resume & portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make buttons less wobbly! right now they push other elements around when I hover
