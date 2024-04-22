@@ -1,16 +1,16 @@
 # Contents
 
-- [About](#about-my-project)
+- [About my project 🌱](#about-my-project)
 - [Running on your local machine](#instructions-for-running-on-your-local-machine)
 - [Demo](#demo)
 - [Future features](#future-features)
 
-# About my project
+# About my project 🌱
 [HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
 Welcome to my Node.js portfolio! 🌟 This is where I showcase my projects, skills, and experiences as a web developer and UI/UX designer. 🌻🌿
 
-This is absolutely still a work in progress (and I'm spending way too much time on this instead of my actual CS classes), but here are the current features as of 22 April 2024:
+This is absolutely still a work in progress (and I'm spending way too much time on this instead of my actual CS classes </3), but here are the current features as of 22 April 2024:
 
 - **portfolio** (🚧 under construction): built on a responsive grid layout; showcases my projects
 - **resume** (🚧 under construction): here you can view and/or download a copy of my resume (last update sometime in April 2024)
