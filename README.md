@@ -8,11 +8,14 @@
 # About my project
 [HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
-This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 22 April 2024 it features my portfolio (under construction), my resume (also under construction), and a "blog" running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
+Welcome to my Node.js portfolio! This is where I showcase my projects, skills, and experiences as a web developer and UI/UX designer. Still a work in progress, but here are the current features (as of 22 April 2024):
 
-My about page contains weather data of places I am from, retrieved from [OpenWeather](https://openweathermap.org/).
+- **portfolio** (🚧 under construction): built on a responsive grid layout; showcases my projects
+- **resume** (🚧 under construction): here you can view and/or download a copy of my resume (last update sometime in April 2024)
+- **about page**: contains an intro & weather data (retrieved from [OpenWeather](https://openweathermap.org/)) of places I am from
+- **"blog"**: my "thoughts;" currently running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
 
-When this site becomes more functional I intend to obtain a domain and make it my UI/UX design and web dev portolio. :)
+Directory structure:
 
 - **index.js** is the entry point of my application
 - **src** houses my HTML documents
@@ -28,7 +31,7 @@ npm run dev
 ```
 
 # Demo
-You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website (since neither GitHub nor Render has allowed me to serve dynamic index.js files... I'll figure it out someday). It has limited functionality and as of 22 April 2024 I have stopped updating it concurrently with this repository.
+You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website. Please note that this preview has limited functionality and does not include all the features present in this version.
 
 This demo is notably missing the password-protection feature for internal.html, so here is what happens—
 
@@ -41,3 +44,4 @@ This demo is notably missing the password-protection feature for internal.html, 
 - flesh out resume & portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make buttons less wobbly! right now they push other elements around when I hover
+- make build script more functional
