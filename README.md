@@ -26,12 +26,12 @@ You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.htm
 This demo is notably missing the password-protection feature for internal.html.
 
 <video width="320" height="240" controls>
-  <source src="demo/demo-responsive.mov" type="video/mp4">
+  <source src="./demo/demo-responsive.mov" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 <video width="320" height="240" controls>
-  <source src="demo/demo-blog.mov" type="video/mp4">
+  <source src="./demo/demo-blog.mov" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
