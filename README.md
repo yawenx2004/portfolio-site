@@ -6,7 +6,7 @@
 - [Future features](#future-features)
 
 # About my project
-[demo](https://yawenx2004.github.io/portfolio-site-static/index.html)
+[HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
 This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 22 April 2024 it features my portfolio (under construction), my resume (also under construction), and a "blog" running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
 
