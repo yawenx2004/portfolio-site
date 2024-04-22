@@ -1,17 +1,29 @@
-# About my project
-[demo](https://yawenx2004.github.io/portfolio-site-static/index.html)
+# Contents
 
-This is my portfolio site! Still a work in progress, but I had/am having fun developing & designing it. As of 22 April 2024 it features my portfolio (under construction), my resume (also under construction), and a "blog" running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
+- [About my project 🌱](#about-my-project-)
+- [How to run on your local machine 💻](#how-to-run-on-your-local-machine-)
+- [Demo 🚀](#demo-)
+- [Future features!! 🌠](#future-features-)
 
-My about page contains weather data of places I am from, retrieved from [OpenWeather](https://openweathermap.org/).
+# About my project 🌱
+[HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
-When this site becomes more functional I intend to obtain a domain and make it my UI/UX design and web dev portolio. :)
+Welcome to my Node.js portfolio! 🌟 This is where I showcase my projects, skills, and experiences as a web developer and UI/UX designer. 🌻🌿
+
+This is absolutely still a work in progress (and I'm spending way too much time on this instead of my actual CS classes but it's been incredibly fun </3), but here are the current features as of 22 April 2024:
+
+- **portfolio** (🚧 under construction): built on a responsive grid layout; showcases my projects
+- **resume** (🚧 under construction): here you can view and/or download a copy of my resume (last update sometime in April 2024)
+- **about page**: contains an intro & weather data (retrieved from [OpenWeather](https://openweathermap.org/)) of places I am from
+- **"blog"** (🚧 under construction): my "thoughts;" currently running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
+
+Directory structure:
 
 - **index.js** is the entry point of my application
 - **src** houses my HTML documents
 - **style** houses my CSS file
 
-# Instructions for running on your local machine
+# How to run on your local machine 💻
 1. Clone repository from GitHub
 2. Type the following commands into the terminal:
 3. To test blog functionality, go to internal.html (scroll down; it's the bottom link on the footer), and type in the password; you will then be able to access the blog editor form.
@@ -20,15 +32,18 @@ npm install
 npm run dev
 ```
 
-# Demo
-You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website (since neither GitHub nor Render has allowed me to serve dynamic index.js files... I'll figure it out someday). It has limited functionality and as of 22 April 2024 I have stopped updating it concurrently with this repository.
+# Demo 🚀
+You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website. Please note that this preview has limited functionality and does not include all the features present in this version.
 
-This demo is notably missing the password-protection feature for internal.html.
+This demo is notably missing the password-protection feature for internal.html, so here is what happens—
 
-[![Demo Video](https://vimeo.com/937861246?share=copy)](https://vimeo.com/937861246?share=copy)
+1. Click the link to the interal page (scroll down to the footer); you should see the password input prompt pictured below:
+2. If you click cancel, you'll be directed to the home page; if you enter the wrong password, the form will refresh; if you enter the correct password, you'll be able to access internal.html.
 
+![Demo Image](./demo/demo-password-form.png)
 
-# Future features?
+# Future features!! 🌠
 - flesh out resume & portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make buttons less wobbly! right now they push other elements around when I hover
+- make build script more functional
