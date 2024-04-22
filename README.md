@@ -1,3 +1,9 @@
+# Contents
+
+- [About](#about-my-project)
+- [Section 2](#section-2)
+- [Section 3](#section-3)
+
 # About my project
 [demo](https://yawenx2004.github.io/portfolio-site-static/index.html)
 
