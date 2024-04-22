@@ -1,7 +1,7 @@
 # Contents
 
 - [About my project 🌱](#about-my-project-)
-- [How to run on your local machine 💻](#instructions-for-running-on-your-local-machine-)
+- [How to run on your local machine 💻](#how-to-run-on-your-local-machine-)
 - [Demo 🚀](#demo-)
 - [Future features!! 🌠](#future-features-)
 
