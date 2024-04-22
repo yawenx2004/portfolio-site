@@ -12,6 +12,7 @@
         <div class="about-left">
           <div class="container" id="yawen-image"></div>
         </div>
+
         <div class="about-right">
           <div class="title">about me :)</div>
           <div class="paragraph">Hello! I used they/she pronouns; I exist and I like to eat berries.</div>
@@ -41,13 +42,14 @@
       }
       window.addEventListener("scroll", logScrollPosition);
 
-            // fetch weather
-            const cities = [
+      // i'd like weather from these cities
+      const cities = [
         { name: 'Hanover, NH', lat: '43.700859', lon: '-72.289398' },
         { name: 'Livermore, CA', lat: '37.6819', lon: '-121.7685' },
         { name: 'Nanjing, China', lat: '32.0584', lon: '118.7965' },
       ];
 
+      // fetch weather
       async function fetchLocalWeather(lat, lon) {
         const apiKey = '36b343d898c2753e10cd15e0b4de0d7a';
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
@@ -59,20 +61,21 @@
       async function displayWeather() {
         const weatherContainer = document.getElementById('weather');
         
+        // for each city
         for (const city of cities) {
           const weatherData = await fetchLocalWeather(city.lat, city.lon);
-          
           const temperature = (weatherData.main.temp - 273.15).toFixed(2);
           const description = weatherData.weather[0].description;
           const icon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
     
+          // build html doc for display
           const weatherElement = document.createElement('div');
           weatherElement.innerHTML = `
-                <div class="grid">
-                  <img src="${icon}" alt="${description}" />
-                  <div class="title">${city.name}</div>
-                  <div class="paragraph">${temperature}°C // ${description}</div>
-                <div class="grid"`;
+            <div class="grid">
+              <img src="${icon}" alt="${description}" />
+              <div class="title">${city.name}</div>
+              <div class="paragraph">${temperature}°C // ${description}</div>
+            </div>`;
           weatherContainer.appendChild(weatherElement);
         }
       }
