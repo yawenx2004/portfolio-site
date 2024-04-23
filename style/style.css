@@ -191,6 +191,8 @@ hr {
 }
 
 #copyright {
+    font-size: 12px;
+    color: var(--white);
     text-align: right;
 }
 
