@@ -51,6 +51,7 @@ This demo is notably missing the password-protection feature for internal.html, 
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make build script more functional
 - deploy deploy deploy
+- make it responsive for mobile devices
 
 ### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
