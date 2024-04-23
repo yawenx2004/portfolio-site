@@ -55,6 +55,6 @@ This demo is notably missing the password-protection feature for internal.html, 
 
 ### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
-- draw my pfp, in the style of the strawberries icon; replace the photo with this art
+- draw my pfp, in the style of the strawberries icon; replace my photo on the about page with this art
 - re-evaluate spacing & divider decisions
 - make buttons less wobbly! right now they push other elements around when I hover
