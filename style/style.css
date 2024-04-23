@@ -341,6 +341,7 @@ hr {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 16px;
+    line-height: 1.75;
 }
 
 .unbold {
