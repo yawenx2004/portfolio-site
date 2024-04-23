@@ -50,7 +50,7 @@ This demo is notably missing the password-protection feature for internal.html, 
 - actully build each part of the portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make build script more functional
-- update demo site; right now both its functionality & its UI are wildly outdated, in comparison to this
+- deploy deploy deploy
 
 ### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
