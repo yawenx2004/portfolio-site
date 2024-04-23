@@ -4,8 +4,8 @@
 2. [How to run on your local machine 💻](#how-to-run-on-your-local-machine-)
 3. [Demo 🚀](#demo-)
 4. [Future features!! 🌠](#future-features-)
-   - [dev](#dev)
-   - [UI/UX & graphics](#uiux--graphics)
+   - [dev](#-dev-)
+   - [UI/UX & graphics](#-des-)
 
 # About my project 🌱
 [HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
@@ -46,12 +46,13 @@ This demo is notably missing the password-protection feature for internal.html, 
 ![Demo Image](./demo/demo-password-form.png)
 
 # Future features!! 🌠
-### dev
+### 🌟 dev 🌟
 - actully build each part of the portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
 - make build script more functional
+- update demo site; right now both its functionality & its UI are wildly outdated, in comparison to this
 
-### UI/UX & graphics
+### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
 - draw my pfp, in the style of the strawberries icon; replace the photo with this art
 - re-evaluate spacing & divider decisions
