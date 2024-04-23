@@ -13,7 +13,7 @@ Welcome to my Node.js portfolio! 🌟 This is where I showcase my projects, skil
 This is absolutely still a work in progress (and I'm spending way too much time on this instead of my actual CS classes but it's been incredibly fun </3), but here are the current features as of 22 April 2024:
 
 - **portfolio** (🚧 under construction): built on a responsive grid layout; showcases my projects
-- **resume** (🚧 under construction): here you can view and/or download a copy of my resume (last update sometime in April 2024)
+- **resume**: here you can view and/or download a copy of my resume (last update sometime in April 2024)
 - **about page**: contains an intro & weather data (retrieved from [OpenWeather](https://openweathermap.org/)) of places I am from
 - **"blog"** (🚧 under construction): my "thoughts;" currently running on local storage, with a capacity of one (1) entry exactly; this can be edited through a password-protected internal page.
 
@@ -44,7 +44,13 @@ This demo is notably missing the password-protection feature for internal.html, 
 ![Demo Image](./demo/demo-password-form.png)
 
 # Future features!! 🌠
-- flesh out resume & portfolio
+### dev
+- actully build each part of the portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
-- make buttons less wobbly! right now they push other elements around when I hover
 - make build script more functional
+
+### UI/UX & graphics
+- remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
+- draw my pfp, in the style of the strawberries icon; replace the photo with this art
+- re-evaluate spacing & divider decisions
+- make buttons less wobbly! right now they push other elements around when I hover
