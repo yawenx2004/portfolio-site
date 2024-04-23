@@ -38,9 +38,13 @@
   
 :root {
     --white: #FFFCF4;
-    --black: #282824;
+    --black: #31332e;
     --action: #F36A63;
     --accent: #9cbd60;
+
+    --gray: #afb0ac;
+    --dark-gray: #656663;
+
     --dim: #748FA2;
     --dim-hover: #94C7EC;
 
@@ -71,6 +75,15 @@ a {
     text-decoration: none;
 }
 
+hr {
+    width: 25%;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    justify-content: center;
+    border: 0.5px solid var(--gray);
+}
+
 .header {
     /*position: fixed;
     top: 0px;
@@ -85,7 +98,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 24px 48px;
+    padding: 24px 72px;
 }
 
 .first-container {
@@ -113,6 +126,7 @@ a {
 .circle-icon {
     position: fixed;
     top: 0px;
+    left: 48px;
     width: 160px;
     height: 160px;
     background-image: url('../images/logo.png');
@@ -128,7 +142,8 @@ a {
 
 .subtitles a {
     color: var(--black);
-    font-weight: bold;
+    font-weight: light;
+    font-size: 16px;
     margin-right: 24px;
     margin-left: 48px;
     margin-top: 32px;
@@ -139,6 +154,11 @@ a {
 /* //////////////////// */
 .footer {
     background-color: var(--black);
+}
+
+.footer hr {
+    margin-left: 72px;
+    border: 0.5px solid var(--dark-gray);
 }
 
 .footer .container {
@@ -200,6 +220,28 @@ a {
     padding: 96px 192px;
 }
 
+#greeting {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#name {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+#tagline {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    height: 48px;
+}
+
+#intro {
+    font-size: 18px;
+}
+
 /* //////////////////// */
 /* grids                */
 /* //////////////////// */
@@ -251,7 +293,7 @@ a {
 }
 
 .footer .grid-container {
-    margin: 0px 48px;
+    margin: 0px 72px;
     padding-top: 24px;
 }
 
@@ -286,21 +328,21 @@ a {
 #tag:hover {
     border: none;
     box-shadow: none;
-    background-color: var(--dark-blue);
+    background-color: var(--black);
 }
 
 /* //////////////////// */
 /* text & bottons       */
 /* //////////////////// */
 .title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
 .paragraph {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 16px;
 }
@@ -370,23 +412,6 @@ embed {
     margin-top: 24px;
 }
 
-#greeting {
-    margin-bottom: 0;
-    font-weight: 300;
-}
-
-#name {
-    font-size: 40px;
-    margin-top: 0px;
-}
-
-#tagline {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    height: 48px;
-}
-
 #primary-button {
     margin-top: 0px;
     margin-right: 24px;
@@ -421,7 +446,7 @@ embed {
 
 #about-container .about-left {
     width: 240px;
-    margin-right: 72px;
+    margin-right: 96px;
 }
 
 /*#about-container .about-right {
@@ -471,7 +496,7 @@ embed {
 /* for medium screens */
 @media (min-width: 900px) and (max-width: 1199px) {
     .container-left .big-textbox {
-        padding: 96px 108px;
+        padding: 96px 120px;
         height: 576px;
     }
 
@@ -483,12 +508,20 @@ embed {
 /* for small screens */
 @media (min-width: 767px) and (max-width: 899px) {
     .container-left .big-textbox {
-        padding: 96px 96px;
+        padding: 96px 120px;
         height: 576px;
     }
 
+    .container-left {
+        flex: 3;
+    }
+    
+    .container-right {
+        flex: 1;
+    }
+
     .subtitles a {
-        margin-right: 0px;
+        margin-left: 24px;
     }
 
     .grid-container {
@@ -503,7 +536,7 @@ embed {
     }
 
     .subtitles a {
-        margin-right: 0px;
+        margin-left: 24px;
     }
 
     .big-text-container {
@@ -511,13 +544,22 @@ embed {
     }
 
     .container-left .big-textbox {
-        padding: 60px 48px;
+        padding: 60px 72px;
         height: 576px;
     }
 
     .grid-container {
         grid-template-columns: repeat(2, 240px);
         justify-content: space-between;
+    }
+
+    #about-container {
+        flex-direction: column;
+    }
+
+    #about-container .about-left {
+        margin-right: 0px;
+        margin-bottom: 48px;
     }
 }
 
@@ -528,7 +570,7 @@ embed {
     }
 
     .subtitles a {
-        margin-right: 0px;
+        margin-left: 24px;
     }
 
     .big-text-container {
@@ -536,12 +578,30 @@ embed {
     }
 
     .container-left .big-textbox {
-        padding: 60px 48px;
+        padding: 60px 72px;
         height: 576px;
     }
 
     .grid-container {
         grid-template-columns: repeat(1, 240px);
         justify-content: center;
+    }
+
+    .footer .grid-container {
+        grid-template-columns: repeat(1, 240px);
+        justify-content: left;
+    }
+
+    #about-container {
+        flex-direction: column;
+    }
+
+    #about-container .about-left {
+        margin-right: 0px;
+        margin-bottom: 48px;
+    }
+
+    #copyright {
+        text-align: left;
     }
 }
