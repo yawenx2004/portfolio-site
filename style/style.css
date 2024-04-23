@@ -38,7 +38,7 @@
   
 :root {
     --white: #FFFCF4;
-    --black: #31332e;
+    --black: #262625;
     --action: #F36A63;
     --accent: #9cbd60;
 
@@ -477,7 +477,7 @@ embed {
 }
 
 #weather .title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--black);
     margin: 8px 0px;
@@ -485,7 +485,7 @@ embed {
 
 #weather .paragraph {
     color: var(--black);
-    font-size: 14px;
+    font-size: 12px;
     padding: 0;
     margin: 4px 0px;
 }
