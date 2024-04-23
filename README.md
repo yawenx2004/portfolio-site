@@ -5,8 +5,8 @@
 3. [Demo 🚀](#demo-)
 4. [Future features!! 🌠](#future-features-)
 
-   -[dev](#dev)
-   -[UI/UX & graphics](#uiux--graphics)
+   - [dev](#dev)
+   - [UI/UX & graphics](#uiux--graphics)
 
 # About my project 🌱
 [HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
