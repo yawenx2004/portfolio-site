@@ -153,6 +153,21 @@ hr {
     display: none;
 }
 
+#dropdown-button {
+    border: none;
+    width: 48px;
+    height: 48px;
+
+    background-image: url('../images/menu-icon.png');
+    background-color: var(--white);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    right: 72px;
+    top: 40px;
+}
+
 #dropdown-content {
     margin-top: 40px;
     display: flex;
@@ -168,7 +183,6 @@ hr {
 }
 
 #dropdown-content hr {
-    background-color: green;
     margin-top: 8px;
     margin-bottom: 8px;
     width: 75%;
@@ -654,6 +668,10 @@ label {
 
     #weather {
         justify-content: left;
+    }
+
+    #yawen-image {
+        margin-top: 48px;
     }
 }
 
