@@ -205,7 +205,7 @@ hr {
 
 .container-left {
     flex: 2;
-    height: 576px;
+    height: 720px;
 }
 
 .container-right {
@@ -231,7 +231,7 @@ hr {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 32px;
-    height: 48px;
+    height: 72px;
 }
 
 #intro {
@@ -511,7 +511,7 @@ label {
 @media (min-width: 900px) and (max-width: 1199px) {
     .container-left .big-textbox {
         padding: 96px 120px;
-        height: 576px;
+        height: 720px;
     }
 
     .grid-container {
@@ -523,7 +523,7 @@ label {
 @media (min-width: 767px) and (max-width: 899px) {
     .container-left .big-textbox {
         padding: 96px 120px;
-        height: 576px;
+        height: 720px;
     }
 
     .container-left {
@@ -559,7 +559,7 @@ label {
 
     .container-left .big-textbox {
         padding: 60px 72px;
-        height: 576px;
+        height: 720px;
     }
 
     .grid-container {
@@ -593,7 +593,7 @@ label {
 
     .container-left .big-textbox {
         padding: 60px 72px;
-        height: 576px;
+        height: 720px;
     }
 
     .grid-container {
@@ -644,7 +644,7 @@ label {
 
     .container-left .big-textbox {
         padding: 60px 96px;
-        height: 720px;
+        height: 960px;
     }
 
     .grid-container {
@@ -680,6 +680,7 @@ label {
 
     #copyright {
         text-align: left;
+        margin-top: 144px;
     }
 
     #weather {
@@ -707,7 +708,7 @@ label {
     
     #tagline {
         font-size: 2.5em;
-        height: 96px;
+        height: 144px;
     }
 
     .footer .title {
