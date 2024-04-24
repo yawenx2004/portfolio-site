@@ -142,11 +142,36 @@ hr {
 
 .subtitles a {
     color: var(--black);
-    font-weight: light;
+    font-weight: 300;
     font-size: 16px;
     margin-right: 24px;
     margin-left: 48px;
     margin-top: 32px;
+}
+
+.dropdown {
+    display: none;
+}
+
+#dropdown-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+}
+
+#dropdown-content a {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px;
+}
+
+#dropdown-content hr {
+    background-color: green;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 75%;
 }
 
 /* //////////////////// */
@@ -583,8 +608,16 @@ label {
         display: none;
     }
 
-    .subtitles a {
-        margin-left: 24px;
+    .subtitles {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .header {
+        justify-content: center;
     }
 
     .big-text-container {
@@ -634,8 +667,20 @@ label {
         display: none;
     }
 
-    .subtitles a {
-        margin-left: 24px;
+    .subtitles {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    #dropdown-content {
+        margin-top: 96px;
+    }
+
+    .header {
+        justify-content: center;
     }
 
     .big-text-container {
@@ -688,6 +733,11 @@ label {
     }
 
     /* we need to make things bigger */
+    #dropdown-content a {
+        font-size: 2.5em;
+        padding: 24px;
+    }
+
     .title {
         font-size: 2.5em;
     }

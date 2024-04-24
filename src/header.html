@@ -19,28 +19,58 @@
           <a class="text-button" href="about" id="nav-about">about</a>
           <a class="text-button" href="journal" id="nav-journal">journal</a>
         </div>
-    </div>
-
-    <script>
-      // make it so that whatever page you are on, the link goes inactive
-      const pagePath = window.location.pathname;
+        
+        <div class="dropdown">
+          <button id="dropdown-button">menu</button>
+          <div id="dropdown-content" id="subtitles">
+            <a class="text-button" href="./index.html" id="nav-home">home & portfolio</a>
+            <hr>
+            <a class="text-button" href="./resume.html" id="nav-resume">resume</a>
+            <hr>
+            <a class="text-button" href="./about.html" id="nav-about">about</a>
+            <hr>
+            <a class="text-button" href="./journal.html" id="nav-journal">journal</a>
+          </div>
+        </div>
+      </div>
   
-      // function to remove href and change color
-      function makeLinkInactive(page) {
-        document.getElementById('nav-' + page).removeAttribute('href')
-        document.getElementById('nav-' + page).style.color = '#9cbd60';
-      }
+      <script>
+        // make it so that whatever page you are on, the link goes inactive
+        const pagePath = window.location.pathname;
   
-      // apply above function
-      if (pagePath === '/') {
-        makeLinkInactive('home');
-      } else if (pagePath === '/about') {
-        makeLinkInactive('about');
-      } else if (pagePath === '/resume'){
-        makeLinkInactive('resume');
-      } else if (pagePath === '/journal'){
-        makeLinkInactive('journal');
-      }
-    </script>
+        // function to remove href and change color
+        function makeLinkInactive(page) {
+          document.getElementById('nav-' + page).removeAttribute('href')
+          document.getElementById('nav-' + page).style.color = '#B7D465';
+        }
+  
+        // apply above function
+        if (pagePath === '/index.html') {
+          makeLinkInactive('home');
+        } else if (pagePath === '/about.html') {
+          makeLinkInactive('about');
+        } else if (pagePath === '/resume.html'){
+          makeLinkInactive('resume');
+        } else if (pagePath === '/journal.html'){
+          makeLinkInactive('journal');
+        }
+  
+        // display dropdown menu if we click on menu
+        document.addEventListener('click', function(event) {
+  
+          // check if click is in menu
+          var menuButton = document.getElementById('dropdown-button');
+          var isClickedInsideMenuButton = menuButton.contains(event.target);
+  
+          // if so, display content; if not, display menu button
+          if (isClickedInsideMenuButton) {
+            document.getElementById('dropdown-button').style.display = 'none';
+            document.getElementById('dropdown-content').style.display = 'flex';
+          } else {
+            document.getElementById('dropdown-button').style.display = 'block';
+            document.getElementById('dropdown-content').style.display = 'none';
+          }
+        });
+      </script>
   </body>
 </html>
