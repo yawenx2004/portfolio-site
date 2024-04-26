@@ -8,7 +8,7 @@
    - [UI/UX & graphics](#-des-)
 
 # About my project 🌱
-[HTML demo here.](https://yawenx2004.github.io/portfolio-site-static/index.html)
+[Deployed on Render here.](https://yawenx2004.onrender.com/)
 
 Welcome to my Node.js portfolio! 🌟 This is where I showcase my projects, skills, and experiences as a web developer and UI/UX designer. 🌻🌿
 
@@ -35,9 +35,9 @@ npm run dev
 ```
 
 # Demo 🚀
-You can find [here](https://yawenx2004.github.io/portfolio-site-static/index.html) an HTML-only preview of my website. Please note that this preview has limited functionality and does not include all the features present in this version.
+Deployed [here](https://yawenx2004.onrender.com/)!
 
-This demo is notably missing the password-protection feature for internal.html, so here is what happens—
+Here is a quick run-down of how to test the blog functionality:
 
 1. Click the link to the interal page (scroll down to the footer); you should see the password input prompt pictured below:
 2. If you click cancel, you'll be directed to the home page; if you enter the wrong password, the form will refresh; if you enter the correct password, you'll be able to access /internal.
@@ -49,9 +49,6 @@ This demo is notably missing the password-protection feature for internal.html, 
 ### 🌟 dev 🌟
 - actully build each part of the portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
-- make build script more functional
-- deploy deploy deploy
-- make it responsive for mobile devices
 
 ### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
