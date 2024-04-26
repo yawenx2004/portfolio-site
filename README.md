@@ -49,6 +49,7 @@ Here is a quick run-down of how to test the blog functionality:
 ### 🌟 dev 🌟
 - actully build each part of the portfolio
 - host blog & portfolio entries in SQL database; currently everything is in local storage
+- ~~deploy deploy deploy~~ Render's actually so easy to use once you actually watch a 2-minute video about it
 
 ### 🌟 des 🌟
 - remake the weather icons; right now I'm using the [default](https://openweathermap.org/weather-conditions), but I'd like to have versions that mesh better with the overall UI of the site
