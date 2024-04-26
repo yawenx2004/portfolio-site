@@ -116,6 +116,10 @@ hr {
     height: 96px;
 }
 
+.top-spacer {
+    display: none;
+}
+
 .spacer-small {
     height: 24px;
 }
@@ -379,7 +383,7 @@ hr {
 .paragraph {
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     line-height: 1.75;
 }
 
@@ -626,6 +630,11 @@ label {
         display: none;
     }
 
+    .top-spacer {
+        height: 24px;
+        display: block;
+    }
+
     .dropdown {
         display: block;
     }
@@ -681,6 +690,10 @@ label {
         display: none;
     }
 
+    .top-spacer {
+        display: block;
+    }
+
     .circle-icon {
         display: none;
     }
@@ -691,6 +704,11 @@ label {
 
     .dropdown {
         display: block;
+    }
+
+    #dropdown-button {
+        width: 96px;
+        height: 96px;
     }
 
     #dropdown-content {
