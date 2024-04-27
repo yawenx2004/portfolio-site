@@ -17,7 +17,7 @@
 
     <div class="container" id="blog-editor">
       <div class="title">blog editor</div>
-      <form id="blogForm">
+      <form id="blogForm" action="/internal" method="post">
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title" required><br>
 
@@ -47,7 +47,7 @@
           this.reportValidity();
           return;
         }
-    
+
         // put in local storage
         const formData = new FormData(this);
         const entry = {

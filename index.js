@@ -1,16 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+
 const auth = require('basic-auth');
+const sqlite3 = require('sqlite3');
 
 const port = 1334;
 const password = '30dec';
-
-// errors, header, & footer
-const errorFilePath = path.join(__dirname, 'src', 'error.html');
-const errorContent = fs.readFileSync(errorFilePath, 'utf8');
-const header = fs.readFileSync(path.join(__dirname, 'src', 'header.html'), 'utf8');
-const footer = fs.readFileSync(path.join(__dirname, 'src', 'footer.html'), 'utf8');
 
 // check authentification
 function authenticate(req, res) {
@@ -28,6 +24,12 @@ function authenticate(req, res) {
         serveHtml(req, res, path.join(__dirname, 'src', 'internal.html'));
     }
 }
+
+// errors, header, & footer
+const errorFilePath = path.join(__dirname, 'src', 'error.html');
+const errorContent = fs.readFileSync(errorFilePath, 'utf8');
+const header = fs.readFileSync(path.join(__dirname, 'src', 'header.html'), 'utf8');
+const footer = fs.readFileSync(path.join(__dirname, 'src', 'footer.html'), 'utf8');
 
 // serve with header & footer
 function serveHtml(req, res, filePath) {
@@ -47,26 +49,33 @@ function serveHtml(req, res, filePath) {
     });
 }
 
+// constants for server
+const pathMap = {
+    '/': 'main.html',
+    '/resume': 'resume.html',
+    '/about': 'about.html',
+    '/journal': 'journal.html',
+    '/cosc25': 'cosc25.html',
+    '/art-gallery': 'art-gallery.html',
+    '/sandbox': 'sandbox.html'
+};
+const extensions = {
+    '.css': ['style', 'text/css'],
+    '.woff2': ['fonts', 'font/woff2'],
+    '.png': ['images', 'images/png'],
+    '.jpeg': ['images', 'images/jpeg'],
+    '.jpg': ['images', 'images/jpeg'],
+    '.pdf': ['documents', 'application/pdf']
+};
+
 // server!
 const server = http.createServer((req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
     let filePath;
 
-    // various html pages
-    if (url.pathname === '/') {
-        filePath = path.join(__dirname, 'src', 'main.html');
-    } else if (url.pathname === '/resume') {
-        filePath = path.join(__dirname, 'src', 'resume.html');
-    } else if (url.pathname === '/about') {
-        filePath = path.join(__dirname, 'src', 'about.html');
-    } else if (url.pathname === '/journal') {
-        filePath = path.join(__dirname, 'src', 'journal.html');
-    } else if (url.pathname === '/cosc25') {
-        filePath = path.join(__dirname, 'src', 'cosc25.html');
-    } else if (url.pathname === '/art-gallery') {
-        filePath = path.join(__dirname, 'src', 'art-gallery.html');
-    } else if (url.pathname === '/sandbox') {
-        filePath = path.join(__dirname, 'src', 'sandbox.html');
+    // check if url matches path map
+    if (pathMap[url.pathname]) {
+        filePath = path.join(__dirname, 'src', pathMap[url.pathname]);
 
     // password-protected:
     } else if (url.pathname == '/internal') {
@@ -76,16 +85,20 @@ const server = http.createServer((req, res) => {
         return;
     
     // configuration for non-html pages
-    } else if (url.pathname.endsWith('.css')) {
-        filePath = path.join(__dirname, 'style', path.basename(url.pathname));
-    } else if (url.pathname.endsWith('.woff2')) {
-        filePath = path.join(__dirname, 'fonts', path.basename(url.pathname));
-    } else if (url.pathname.endsWith('.png') || url.pathname.endsWith('.jpeg')) {
-        filePath = path.join(__dirname, 'images', path.basename(url.pathname));
-    } else if (url.pathname.endsWith('.pdf') || url.pathname.endsWith('.jpeg')) {
-        filePath = path.join(__dirname, 'documents', path.basename(url.pathname));
     } else {
-        filePath = path.join(__dirname, url.pathname);
+
+        // check file extensions
+        for (const ext in extensions) {
+            if (url.pathname.endsWith(ext)) {
+                filePath = path.join(__dirname, extensions[ext][0], path.basename(url.pathname));
+                break;
+            }
+
+            // if no mapping found, serve directly
+            if (!filePath) {
+                filePath = path.join(__dirname, url.pathname);
+            }
+        }
     }
 
     // serve html files with header & footer
@@ -101,21 +114,15 @@ const server = http.createServer((req, res) => {
             
             // determine content type based on file extension
             } else {
-                let contentType;
-                if (filePath.endsWith('.css')) {
-                    contentType = 'text/css';
-                } else if (filePath.endsWith('.woff2')) {
-                    contentType = 'font/woff2';
-                } else if (filePath.endsWith('.png')) {
-                    contentType = 'image/png';
-                } else if (filePath.endsWith('.jpeg') || filePath.endsWith('.jpg')) {
-                    contentType = 'image/jpeg';
-                } else if (filePath.endsWith('.pdf')) {
-                    contentType = 'application/pdf';
-                } else {
-                    contentType = 'text/plain';
+                let contentType = 'text/plain';
+                for (const ext in extensions) {
+                    if (filePath.endsWith(ext)) {
+                        contentType = extensions[ext][1];
+                    }
+                    if (!contentType) {
+                        contentType = 'text/plain';
+                    }
                 }
-
                 res.writeHead(200, { 'Content-Type': contentType });
                 res.end(data);
             }
