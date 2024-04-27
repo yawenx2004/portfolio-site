@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const auth = require('basic-auth');
-const sqlite3 = require('sqlite3');
+/* const sqlite3 = require('sqlite3'); */
 
 const port = 1334;
 const password = '30dec';
